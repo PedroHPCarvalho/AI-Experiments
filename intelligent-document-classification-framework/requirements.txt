@@ -1,0 +1,7 @@
+pymupdf
+pillow
+pydantic
+pydantic-settings
+pyyaml
+python-dotenv
+pytesseract

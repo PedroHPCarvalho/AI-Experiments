@@ -1,0 +1,23 @@
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.venv/
+**/venv/
+**/*.egg-info/
+**/dist/
+**/build/
+
+# Secrets and environment
+**/.env
+**/.env.*
+!**/.env.example
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local Git backups
+**/.git-backup/

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intelligent-document-framework"
+version = "0.1.0"
+description = "A Python framework for multimodal document interpretation and classification."
+requires-python = ">=3.12"
+dependencies = [
+    "pymupdf",
+    "pillow",
+    "pydantic",
+    "pydantic-settings",
+    "pyyaml",
+    "python-dotenv"
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
