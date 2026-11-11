@@ -13,7 +13,8 @@ dependencies = [
     "pydantic",
     "pydantic-settings",
     "pyyaml",
-    "python-dotenv"
+    "python-dotenv",
+    "pytesseract"
 ]
 
 [project.optional-dependencies]
