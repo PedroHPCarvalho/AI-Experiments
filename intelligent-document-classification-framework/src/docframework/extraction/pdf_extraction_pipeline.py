@@ -6,6 +6,7 @@ if __name__ == "__main__" and not __package__:
 
 from docframework.core.pdf_document import PDFDocument
 from docframework.core.extraction_results import PageExtractionResult
+from docframework.core.pdf_extraction_result import PDFExtractionResult
 from docframework.extraction.pdf_text_extractor import PDFTextExtractor
 from docframework.extraction.pdf_image_extractor import PDFImageExtractor 
 from docframework.extraction.pdf_page_renderer import PDFPageRenderer 
@@ -22,8 +23,8 @@ class PDFExtractionPipeline:
     else:
       self.ocr_extractor = None
 
-  def run_pipeline(self, document: PDFDocument) ->list[PageExtractionResult]:
-    results_list: list[PageExtractionResult]= []
+  def run_pipeline(self, document: PDFDocument) -> PDFExtractionResult:
+    results_list: list[PageExtractionResult] = []
 
     text_native_list = self.text_native_extractor.extract(document)
     text_by_page = {
@@ -63,7 +64,11 @@ class PDFExtractionPipeline:
         )
       )
 
-    return results_list
+
+    return PDFExtractionResult(
+       document=document,
+       pages=tuple(results_list)
+    )
 
 if __name__ == "__main__":
     import argparse
