@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field, model_validator
-from docframework.core.category_definition import CategoryDefinition
+from docframework.intelligence.configuration.category_definition import CategoryDefinition
 
 class ClassificationConfig(BaseModel):
   categories: list[CategoryDefinition] = Field(min_length=1)

@@ -1,0 +1,24 @@
+{
+    "document_type": "E-mail de atendimento",
+    "classification": "Solicitação",
+    "summary": "Mensagem de e-mail enviada por Marina Costa para a equipe de atendimento solicitando a alteração da data de vencimento da fatura mensal do dia 10 para o dia 15, a partir do próximo ciclo. A remetente esclarece que não se trata de contestação ou reclamação, mas de um ajuste operacional para organizar os pagamentos de acordo com o recebimento do salário.",
+    "classification_reason": "O documento apresenta como intenção principal uma solicitação de ação específica (alteração de data de vencimento). O assunto e o corpo da mensagem utilizam explicitamente o verbo 'solicitar'. A remetente nega que haja contestação ou reclamação, e uma nota de cenário confirma que o objetivo é uma alteração cadastral/operacional.",
+    "evidence": [
+        {
+            "page_number": 1,
+            "description": "Assunto do e-mail: 'Solicitação de alteração da data de vencimento'"
+        },
+        {
+            "page_number": 1,
+            "description": "Corpo da mensagem: 'Gostaria de solicitar a alteração da data de vencimento da minha fatura mensal do dia 10 para o dia 15'"
+        },
+        {
+            "page_number": 1,
+            "description": "Declaração da remetente: 'Não estou contestando nenhum lançamento nem relatando um problema com a cobrança atual'"
+        },
+        {
+            "page_number": 1,
+            "description": "Observação do cenário: 'A intenção principal é solicitar uma alteração cadastral/operacional, sem reclamação ou contestação'"
+        }
+    ]
+}

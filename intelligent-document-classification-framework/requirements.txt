@@ -5,3 +5,4 @@ pydantic-settings
 pyyaml
 python-dotenv
 pytesseract
+google-genai

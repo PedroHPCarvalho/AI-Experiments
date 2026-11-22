@@ -1,40 +1,36 @@
-if __name__ == "__main__" and not __package__:
-    import sys
-    from pathlib import Path
-
-    sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
-
-from docframework.core.pdf_document import PDFDocument
-from docframework.core.extracted_page import ExtractedPage
 import pymupdf
+
+from docframework.core.extracted_page import ExtractedPage
+from docframework.core.pdf_document import PDFDocument
 
 
 class PDFTextExtractor:
+    """Extracts the embedded text from a PDF, page by page.
+
+    Uses PyMuPDF's `get_text()` method to read the text layer of each
+    page. It does not use OCR (Tesseract), so it only works on PDFs
+    that already contain selectable text. Scanned PDFs (images only)
+    return empty text; use OCRExtractor for those.
+    """
+
     def extract(self, document: PDFDocument) -> list[ExtractedPage]:
+        """Extracts the text of every page in the document.
+
+        Args:
+            document: The PDFDocument to read, as returned by PDFLoader.
+
+        Returns:
+            One ExtractedPage per page, in order, with page numbers
+            starting at 1.
+        """
         extracted_pages: list[ExtractedPage] = []
 
         with pymupdf.open(document.file_path) as doc:
+            # PyMuPDF pages are 0-indexed; start=1 gives human-friendly numbers
             for index, page in enumerate(doc, start=1):
+                # Reads the embedded text layer directly, no OCR involved
                 extracted_pages.append(
                     ExtractedPage(page_number=index, content_page=page.get_text())
                 )
 
         return extracted_pages
-
-
-if __name__ == "__main__":
-    import argparse
-    import pprint
-
-    from docframework.ingestion.pdf_loader import PDFLoader
-
-    parser = argparse.ArgumentParser(description="Testa a extração de texto de um PDF.")
-    parser.add_argument("pdf_path", help="Caminho para o arquivo PDF.")
-    args = parser.parse_args()
-
-    document = PDFLoader().load(args.pdf_path)
-    pages = PDFTextExtractor().extract(document)
-    total_characters = sum(len(page.content_page) for page in pages)
-    print(f"Páginas processadas: {len(pages)}")
-    print(f"Caracteres extraídos: {total_characters}")
-    pprint.pprint(pages)

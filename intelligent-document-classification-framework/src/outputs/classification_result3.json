@@ -1,0 +1,24 @@
+{
+    "document_type": "Reclamação Formal",
+    "classification": "Reclamação",
+    "summary": "Documento formal de reclamação protocolado pelo cliente Carlos Mendes (SAC-2026-11842) em 18/11/2026, relatando insatisfação com o atendimento recebido em 17/11/2026, incluindo longa espera e cobrança indevida de serviço cancelado, solicitando revisão, regularização e retorno formal.",
+    "classification_reason": "O documento possui o título explícito 'RECLAMAÇÃO FORMAL — ATENDIMENTO' e o corpo do texto declara a intenção de registrar uma reclamação devido à insatisfação com o serviço e falta de solução para o problema relatado, atendendo aos critérios da categoria 'Reclamação'.",
+    "evidence": [
+        {
+            "page_number": 1,
+            "description": "Título do documento: 'RECLAMAÇÃO FORMAL — ATENDIMENTO'."
+        },
+        {
+            "page_number": 1,
+            "description": "Texto afirma: 'gostaria de registrar uma reclamação referente ao atendimento recebido em 17/11/2026'."
+        },
+        {
+            "page_number": 1,
+            "description": "Assunto indicado: 'Atendimento insatisfatório e ausência de solução'."
+        },
+        {
+            "page_number": 1,
+            "description": "Imagem anexada mostrando atendente de call center, ilustrando o canal de atendimento mencionado."
+        }
+    ]
+}

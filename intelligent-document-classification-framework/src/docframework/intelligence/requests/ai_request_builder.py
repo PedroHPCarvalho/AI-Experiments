@@ -12,8 +12,9 @@ from docframework.core.ai_request import AIRequest
 
 
 class AiRequestBuilder:
-  def __init__(self, prompt_manager: PromptManager):
-    self.prompt_manager = prompt_manager
+  def __init__(self, templates_dir: Path | str):
+    self.prompt_manager = PromptManager(templates_dir=templates_dir)
+    pass
   def build(
       self,
       template_name: str | Path, 

@@ -1,0 +1,16 @@
+{
+    "document_type": "Comunicação de Sinistro",
+    "classification": "Solicitação",
+    "summary": "Documento de comunicação de sinistro residencial enviado por Renato Oliveira, relatando danos no imóvel causados por temporal em 18/11/2026 (queda de parte do muro lateral e danos no portão de entrada). O remetente solicita a abertura do processo de sinistro, orientação sobre a vistoria e a relação dos documentos necessários para análise da cobertura.",
+    "classification_reason": "O documento se enquadra na categoria 'Solicitação' porque o remetente expressamente solicita providências ao destinatário: 'Solicito a abertura do processo de sinistro, a orientação sobre a vistoria e a relação dos documentos necessários para análise da cobertura'.",
+    "evidence": [
+        {
+            "page_number": 1,
+            "description": "Cabeçalho 'COMUNICAÇÃO DE SINISTRO — SEGURO RESIDENCIAL' e identificação do segurado Renato Oliveira."
+        },
+        {
+            "page_number": 1,
+            "description": "Parágrafo onde o remetente pede ações específicas: 'Solicito a abertura do processo de sinistro, a orientação sobre a vistoria e a relação dos documentos necessários para análise da cobertura.'"
+        }
+    ]
+}

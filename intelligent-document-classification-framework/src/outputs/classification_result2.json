@@ -1,0 +1,20 @@
+{
+    "document_type": "Mensagem ao atendimento",
+    "classification": "Contestação",
+    "summary": "Roberto Almeida enviou uma mensagem à Central de Atendimento em 19/11/2026 contestando uma cobrança duplicada de R$ 189,90 realizada em 14/11/2026 no Mercado Central, solicitando verificação e eventual estorno do segundo lançamento.",
+    "classification_reason": "O assunto da mensagem é 'Contestação de cobrança em duplicidade' e o corpo do texto afirma explicitamente 'Estou contestando o segundo lançamento', questionando uma transação específica reconhecida indevidamente.",
+    "evidence": [
+        {
+            "page_number": 1,
+            "description": "Assunto: Contestação de cobrança em duplicidade"
+        },
+        {
+            "page_number": 1,
+            "description": "Texto: 'Estou contestando o segundo lançamento, pois não reconheço uma segunda transação.'"
+        },
+        {
+            "page_number": 2,
+            "description": "Conteúdo idêntico à página 1 confirmando a contestação da cobrança."
+        }
+    ]
+}

@@ -14,7 +14,8 @@ dependencies = [
     "pydantic-settings",
     "pyyaml",
     "python-dotenv",
-    "pytesseract"
+    "pytesseract",
+    "google-genai"
 ]
 
 [project.optional-dependencies]
